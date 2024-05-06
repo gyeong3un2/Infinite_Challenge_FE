@@ -1,0 +1,29 @@
+.header {
+  padding-inline: 15rem;
+  line-height: 3.5rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.headerLeft {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.headerRight {
+  font-size: 1rem;
+  cursor: pointer;
+}
+.headerRight:after {
+  display: block;
+  content: '';
+  border-bottom: solid #1677FF;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.headerRight:hover:after {
+  transform: scaleX(1);
+}
