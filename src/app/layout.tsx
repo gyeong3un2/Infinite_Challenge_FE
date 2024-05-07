@@ -1,10 +1,10 @@
 import './globals.css';
-import '@/css/ui.basic.css';
-import { inter } from '@/utils/fonts';
+import '@/assets/css/ui.basic.css';
+import { inter } from '../assets/fonts';
 
 import type { Metadata } from 'next';
 import Provider from '@/utils/Provider';
-import Gnb from '@/components/common/Gnb';
+import Gnb from '@/components/shared/layout/Gnb';
 
 export const metadata: Metadata = {
   title: '한국임상정보',
