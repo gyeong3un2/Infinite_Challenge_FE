@@ -2,8 +2,8 @@
 import { Flex, Layout } from 'antd';
 import { noto_sans_kr } from '../../../assets/fonts';
 import clsx from 'clsx';
-import { ExperimentTwoTone } from '@ant-design/icons';
 import LinkButton from '@/components/ui-kit/LinkButton';
+import { BeakerIcon } from '@/assets/icons';
 
 const Header = Layout;
 
@@ -14,11 +14,7 @@ function Gnb() {
         justify="space-between"
         className={clsx('px-3', noto_sans_kr.className)}
       >
-        <LinkButton
-          url="/"
-          className="headerLeft"
-          icon={<ExperimentTwoTone className="logo" />}
-        >
+        <LinkButton url="/" className="headerLeft" icon={<BeakerIcon />}>
           한국임상정보
         </LinkButton>
 

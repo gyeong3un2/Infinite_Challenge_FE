@@ -1,0 +1,115 @@
+.searchWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 33rem;
+}
+
+.searchInfo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.searchBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  width: 30rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+.searchBox:focus-within {
+  outline: #1677ff solid 2px;
+}
+
+.searchInput {
+  width: 80%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: transparent;
+}
+.searchInput:focus::placeholder {
+  color: transparent;
+}
+
+.searchBtn {
+  margin-right: -1.7rem;
+}
+
+.searchDropBox {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 24px 16px;
+  position: absolute;
+  width: 486px;
+  height: auto;
+  top: 375px;
+  background: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.recentSearch {
+  width: 61px;
+  height: 16px;
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #6a737b;
+}
+
+.searchKeyword {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 5px;
+  gap: 10px;
+  width: 438px;
+  height: 40px;
+  background: #ffffff;
+  cursor: pointer;
+}
+.searchKeyword:hover {
+  background: #efefef;
+}
+
+.searchKeyword > .keyword {
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.4px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.recentSearchDetail {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 0px;
+  gap: 10px;
+  width: 438px;
+  height: 32px;
+}
+
+.noRecentSearch {
+  display: flex;
+  width: 154px;
+  height: 40px;
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  align-items: center;
+  letter-spacing: -0.4px;
+  color: #a7afb7;
+}

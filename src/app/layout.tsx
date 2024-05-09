@@ -1,5 +1,8 @@
 import './globals.css';
 import '@/assets/css/ui.basic.css';
+import '@/assets/css/ui.header.css';
+import '@/assets/css/ui.result.css';
+import '@/assets/css/ui.search.css';
 import { inter } from '../assets/fonts';
 
 import type { Metadata } from 'next';

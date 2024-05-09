@@ -17,7 +17,7 @@ function LinkButton({ children, url, className, icon }: LinkButtonProps) {
 
   return (
     <div onClick={handleClick} className={className}>
-      {icon && <span>{icon}</span>}
+      {icon && <span className="mr-2">{icon}</span>}
       {children}
     </div>
   );
