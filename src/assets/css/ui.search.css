@@ -81,7 +81,6 @@
 .searchKeyword:hover {
   background: #efefef;
 }
-
 .searchKeyword > .keyword {
   font-family: 'Spoqa Han Sans Neo';
   font-style: normal;
@@ -89,6 +88,10 @@
   font-size: 14.4px;
   line-height: 16px;
   color: #000000;
+}
+.searchKeyword > .keyword.highlight {
+  color: #1677ff;
+  font-weight: 700;
 }
 
 .recentSearchDetail {

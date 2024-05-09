@@ -6,6 +6,10 @@ import SearchIcon from '@/assets/icons/SearchIcon';
 import { useState } from 'react';
 import { SearchResultIcon } from '@/assets/icons';
 
+const dummyData = {
+  searchKeyword: ['검색어', '검색어', '검색어', '검색어'],
+};
+
 export default function Home() {
   const [isFocus, setIsFocus] = useState(false);
   const [isTyping, setIsTyping] = useState(false);
@@ -41,6 +45,7 @@ export default function Home() {
                 placeholder="질환명을 입력해 주세요."
                 className="searchInput"
                 onFocus={handleFocus}
+                onBlur={handleBlur}
                 onChange={(e) => handleInput(e)}
               />
               <button className="searchBtn">
@@ -58,22 +63,12 @@ export default function Home() {
                   {isTyping ? '추천' : '최근'} 검색어
                 </div>
                 <div>
-                  <div className="searchKeyword">
-                    <SearchResultIcon />
-                    <div className="keyword">검색어</div>
-                  </div>
-                  <div className="searchKeyword">
-                    <SearchResultIcon />
-                    <div className="keyword">검색어</div>
-                  </div>
-                  <div className="searchKeyword">
-                    <SearchResultIcon />
-                    <div className="keyword">검색어</div>
-                  </div>
-                  <div className="searchKeyword">
-                    <SearchResultIcon />
-                    <div className="keyword">검색어</div>
-                  </div>
+                  {dummyData.searchKeyword.map((keyword, index) => (
+                    <div className="searchKeyword" key={index}>
+                      <SearchResultIcon />
+                      <div className="keyword">{keyword}</div>
+                    </div>
+                  ))}
                 </div>
 
                 {/* <div className="noRecentSearch">최근 검색어가 없습니다. </div> */}
